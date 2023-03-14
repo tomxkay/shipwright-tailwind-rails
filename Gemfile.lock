@@ -193,6 +193,8 @@ GEM
       activesupport (>= 5.2.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
+    view_component_storybook (0.12.1)
+      view_component (>= 2.54)
     web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
@@ -229,6 +231,7 @@ DEPENDENCIES
   turbo-rails
   tzinfo-data
   view_component (~> 2.82)
+  view_component_storybook (~> 0.12.1)
   web-console
   webdrivers
 

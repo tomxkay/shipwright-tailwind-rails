@@ -72,3 +72,5 @@ group :test do
 end
 
 gem "view_component", "~> 2.82"
+
+gem "view_component_storybook", "~> 0.12.1"
