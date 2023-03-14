@@ -62,6 +62,13 @@ Rails.application.configure do
   # Configure asset host
   config.action_controller.asset_host = 'http://localhost:3000'
 
+  config.middleware.insert_before 0, Rack::Cors do
+    allow do
+      origins '*'
+      resource '/rails/stories/*', :headers => :any, :methods => [:get]
+    end
+  end
+
   # Raises error for missing translations.
   # config.i18n.raise_on_missing_translations = true
 

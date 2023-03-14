@@ -1,9 +1,11 @@
 class ButtonComponentStories < ViewComponent::Storybook::Stories
-  story(:with_short_text) do
-  constructor(title: "my title")
+  story(:default) do
+    controls do
+      select(:type, %w[primary outline danger], 'primary')
+    end
   end
 
-  story(:with_long_text) do
-  constructor(title: "my title")
-  end
+  story(:primary) {}
+  story(:outline) {}
+  story(:danger) {}
 end
