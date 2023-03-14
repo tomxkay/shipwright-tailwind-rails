@@ -36,3 +36,6 @@
 
 # Ignore storybook
 */*.stories.json
+
+# Ignore node_modules
+/node_modules/*
