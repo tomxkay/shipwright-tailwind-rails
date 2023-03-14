@@ -1,5 +1,7 @@
 export const parameters = {
   server: {
-    url: `http://localhost:3000/rails/stories`,
+    url: `${location.protocol}${location.hostname}${
+      location.port !== "" ? ":3000" : ""
+    }/rails/view_components`,
   },
 };
