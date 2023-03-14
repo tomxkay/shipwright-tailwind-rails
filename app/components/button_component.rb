@@ -2,7 +2,7 @@
 
 class ButtonComponent < ViewComponent::Base
   attr_accessor :type
- 
+
   PRIMARY_CLASSES = %w[
     disabled:bg-purple-300
     focus:bg-purple-600
@@ -52,3 +52,4 @@ class ButtonComponent < ViewComponent::Base
   end
 
 end
+
