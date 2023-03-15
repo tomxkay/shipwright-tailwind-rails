@@ -1,0 +1,13 @@
+{
+  "title": "Colors Component",
+  "stories": [
+    {
+      "name": "default",
+      "parameters": {
+        "server": {
+          "id": "colors_component/default"
+        }
+      }
+    }
+  ]
+}

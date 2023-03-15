@@ -1,0 +1,13 @@
+{
+  "title": "Typography Component",
+  "stories": [
+    {
+      "name": "default",
+      "parameters": {
+        "server": {
+          "id": "typography_component/default"
+        }
+      }
+    }
+  ]
+}

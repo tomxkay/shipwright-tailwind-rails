@@ -2,6 +2,6 @@
 
 class ColorsComponentPreview < ViewComponent::Preview
   def default
-    render(ColorsComponent.new(type: "type"))
+    render(ColorsComponent.new)
   end
 end

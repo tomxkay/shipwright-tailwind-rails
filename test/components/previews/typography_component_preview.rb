@@ -2,6 +2,6 @@
 
 class TypographyComponentPreview < ViewComponent::Preview
   def default
-    render(TypographyComponent.new(type: "type"))
+    render(TypographyComponent.new)
   end
 end
