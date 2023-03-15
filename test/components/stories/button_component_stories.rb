@@ -1,11 +1,11 @@
 class ButtonComponentStories < ViewComponent::Storybook::Stories
   story(:default) do
     controls do
-      select(:type, %w[primary outline danger], 'primary')
+      select(:type, %w[fill outline ghost], 'fill')
     end
   end
 
-  story(:primary) {}
+  story(:fill) {}
   story(:outline) {}
-  story(:danger) {}
+  story(:ghost) {}
 end

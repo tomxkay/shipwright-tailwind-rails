@@ -1,3 +1,9 @@
 <button class="<%= classes %>">
-  <%= content %>
+  <div class="flex items-center justify-center">
+    <%= tag.i class: %w[mr-[8px] fe fe-arrow-left] %>
+    <p class="caption">
+      <%= content %>
+    </p>
+    <%= tag.i class: %w[ml-[8px] fe fe-arrow-right] %>
+  </div>
 </button>

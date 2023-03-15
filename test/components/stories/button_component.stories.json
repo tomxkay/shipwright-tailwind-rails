@@ -9,7 +9,7 @@
         }
       },
       "args": {
-        "type": "primary"
+        "type": "fill"
       },
       "argTypes": {
         "type": {
@@ -18,18 +18,18 @@
           },
           "name": "Type",
           "options": [
-            "primary",
+            "fill",
             "outline",
-            "danger"
+            "ghost"
           ]
         }
       }
     },
     {
-      "name": "primary",
+      "name": "fill",
       "parameters": {
         "server": {
-          "id": "button_component/primary"
+          "id": "button_component/fill"
         }
       }
     },
@@ -42,10 +42,10 @@
       }
     },
     {
-      "name": "danger",
+      "name": "ghost",
       "parameters": {
         "server": {
-          "id": "button_component/danger"
+          "id": "button_component/ghost"
         }
       }
     }

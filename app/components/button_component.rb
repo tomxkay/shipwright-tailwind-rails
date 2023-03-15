@@ -3,47 +3,43 @@
 class ButtonComponent < ViewComponent::Base
   attr_accessor :type
 
-  PRIMARY_CLASSES = %w[
-    disabled:bg-purple-300
-    focus:bg-purple-600
-    hover:bg-purple-600
-    bg-purple-500
-    text-white
+  FILL_CLASSES = %w[
+    text-type-white-primary
+    bg-button-active
+    hover:bg-button-hover
+    disabled:text-type-white-primary
+    disabled:bg-button-deactivated
   ].freeze
   OUTLINE_CLASSES = %w[
-    hover:bg-gray-200
-    focus:bg-gray-200
-    disabled:bg-gray-100
-    bg-white
+    text-button-active
+    border-button-active
     border
-    border-purple-600
-    text-purple-600
+    hover:text-button-hover
+    hover:border-button-hover
+    disabled:text-button-deactivated
+    disabled:border-button-deactivated
   ].freeze
-  DANGER_CLASSES = %w[
-    hover:bg-red-600
-    focus:bg-red-600
-    disabled:bg-red-300
-    bg-red-500
-    text-white
+  GHOST_CLASSES = %w[
+    text-button-active
+    hover:text-button-hover
+    disabled:text-button-deactivated
   ].freeze
   BASE_CLASSES = %w[
-    cursor-pointer
-    rounded
-    transition
-    duration-200
-    text-center
-    p-4
-    whitespace-nowrap
-    font-bold
+    flex
+    justify-center
+    items-center
+    rounded-full
+    py-[16px]
+    px-[24px]
   ].freeze
 
   BUTTON_TYPE_MAPPINGS = {
-    primary: PRIMARY_CLASSES,
-    danger: DANGER_CLASSES,
-    outline: OUTLINE_CLASSES
+    fill: FILL_CLASSES,
+    outline: OUTLINE_CLASSES,
+    ghost: GHOST_CLASSES
   }.freeze
 
-  def initialize(type: :primary)
+  def initialize(type: :fill)
     @type = type
   end
 
