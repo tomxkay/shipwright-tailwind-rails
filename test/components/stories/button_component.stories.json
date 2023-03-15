@@ -9,14 +9,14 @@
         }
       },
       "args": {
-        "type": "fill"
+        "variant": "fill"
       },
       "argTypes": {
-        "type": {
+        "variant": {
           "control": {
             "type": "select"
           },
-          "name": "Type",
+          "name": "Variant",
           "options": [
             "fill",
             "outline",

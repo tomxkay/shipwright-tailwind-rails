@@ -1,7 +1,7 @@
 class ButtonComponentStories < ViewComponent::Storybook::Stories
   story(:default) do
     controls do
-      select(:type, %w[fill outline ghost], 'fill')
+      select(:variant, %w[fill outline ghost], 'fill')
     end
   end
 

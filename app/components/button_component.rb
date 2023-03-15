@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class ButtonComponent < ViewComponent::Base
-  attr_accessor :type
+  attr_accessor :variant
 
   FILL_CLASSES = %w[
     text-type-white-primary
@@ -39,11 +39,11 @@ class ButtonComponent < ViewComponent::Base
     ghost: GHOST_CLASSES
   }.freeze
 
-  def initialize(type: :fill)
-    @type = type
+  def initialize(variant: :fill)
+    @variant = variant
   end
 
   def classes
-    (BUTTON_TYPE_MAPPINGS[@type] + BASE_CLASSES).join(' ')
+    (BUTTON_TYPE_MAPPINGS[@variant] + BASE_CLASSES).join(' ')
   end
 end
