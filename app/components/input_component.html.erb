@@ -1,1 +1,93 @@
-<div>Add Input template here</div>
+<%
+  arrow = true
+  disabled = false
+  errorMessage = "asdf"
+  hintText = "asdf"
+  icon = "search"
+  label = "asdf"
+  name = "asdf"
+  placeholder = "asdf"
+  required = false
+  rows = "4"
+  successMessage = "asdf"
+  type = "text"
+  value = "asdf"
+  variant = "input"
+
+  borderColor = errorMessage ? "border-error-dark" : "border-background-black-line"
+  fontColor = errorMessage ? "text-error-dark" : "text-type-black-primary"
+
+  variantTag = {
+    input: "input",
+    textarea: "textarea",
+  }
+  
+  isInput = variant === "input"
+  isTextArea = variant === "textarea"
+  iconPresent = icon && isInput
+  type = isInput ? value : ""
+  value = isInput || isTextArea ? value : ""
+%>
+
+ <div class="flex flex-col align-start gap-[8px]">
+   <div class="flex flex-row items-center justify-between"> 
+     <%# Label %>
+     <label
+       for="<%=name%>"
+       class="flex flex-row items-center p-0 text-base font-normal <%= disabled ? 'text-type-black-deactivated' : fontColor %>"
+       >
+       <%= label %>
+       <span aria-label="required"><% required ? "*" : "" %></span>
+     </label>
+
+     <%# Hint Text %>
+     <% if hintText %>
+       <p
+       class="paragraph-2 <%= disabled ? 'text-type-black-deactivated' : 'text-type-black-secondary' %>"
+       >
+       <%= hintText %>
+       </p>
+     <% end %>
+   </div>
+
+   <div
+     class="flex flex-row relative border focus-within:border-button-active focus-within:w-full <%= borderColor %> <%= errorMessage ? 'border-error-dark' : '' %> <%= disabled ? 'bg-button-deactivatedBackground border-type-black-deactivated' : 'text-type-black-primary' %>"
+    >
+     <%# Input / Text Area %>
+     <input
+     class="peer focus:outline-none text-sm py-[14px] px-[16px] w-full <%= iconPresent && 'pl-[48px]' %> <%= isTextArea ? 'resize-none' : '' %>"
+     disable="<%= disabled %>"
+     placeholder="<%= placeholder %>"
+     name="<%= name %>"
+     required="<%= required %>"
+     rows="<%= rows %>"
+     type="<%= type %>"
+     ></input>
+
+     <%# Icon %>
+     <% if iconPresent %>
+       <%= tag.i class: "fe fe-search absolute pointer-events-none left-[16px] top-[14px] peer-disabled:text-type-black-deactivated text-type-black-primary" %>
+     <% end %>
+
+     <%# Arrow %>
+     <% if arrow && isInput %>
+       <%= tag.i class: "fe fe-arrow-right absolute pointer-events-none right-[16px] top-[14px] peer-disabled:text-type-black-deactivated text-type-black-primary" %>
+     <% end %>
+   </div>
+
+   <%# Error Message %>
+   <% if errorMessage %>
+     <span class="flex items-center paragraph-2 text-error-dark">
+       <%= tag.i class: "fe fe-alert-triangle pr-[4px]" %>
+       <%= errorMessage %>
+     </span>
+   <% end %>
+
+   <%# Success Message %>
+   <% if successMessage %>
+     <span class="flex items-center paragraph-2 text-success-dark">
+       <%= tag.i class: "fe fe-check-circle pr-[4px]" %>
+       <%= successMessage %>
+     </span>
+   <% end %>
+ </div>

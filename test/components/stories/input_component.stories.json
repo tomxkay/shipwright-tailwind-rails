@@ -1,0 +1,35 @@
+{
+  "title": "Input Component",
+  "stories": [
+    {
+      "name": "default",
+      "parameters": {
+        "server": {
+          "id": "input_component/default"
+        }
+      },
+      "args": {
+        "variant": "input",
+        "disabled": false
+      },
+      "argTypes": {
+        "variant": {
+          "control": {
+            "type": "select"
+          },
+          "name": "Variant",
+          "options": [
+            "input",
+            "textarea"
+          ]
+        },
+        "disabled": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "Disabled"
+        }
+      }
+    }
+  ]
+}
