@@ -50,6 +50,4 @@ class ButtonComponent < ViewComponent::Base
   def classes
     (BUTTON_TYPE_MAPPINGS[@type] + BASE_CLASSES).join(' ')
   end
-
 end
-
