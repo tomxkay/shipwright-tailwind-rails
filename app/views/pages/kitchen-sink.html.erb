@@ -1,3 +1,14 @@
+<div>
+  <%= render(InputComponent.new(placeholder: "Enter your email")) %>
+  <%= render(ButtonComponent.new()){ "Button" } %>
+  <%= render(CardComponent.new(
+              image: "https://investorplace.com/wp-content/uploads/2019/07/tech1600a-768x432.jpg", 
+              title: "Card Title", 
+              text: "You're free to add application-wide styles to this file and they'll appear at")
+            ) 
+  %>
+</div>
+
 <div className="flex flex-col items-center justify-center w-full bg-type-white-tertiary">
   <%= render(HeaderComponent.new()) %>
   <%= render(TypographyComponent.new()) %>
