@@ -9,23 +9,23 @@
         }
       },
       "args": {
-        "isStandard": false,
-        "image": "",
-        "text": "",
-        "title": ""
+        "is_standard": false,
+        "title": "Card Title",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "image": "https://investorplace.com/wp-content/uploads/2019/07/tech1600a-768x432.jpg"
       },
       "argTypes": {
-        "isStandard": {
+        "is_standard": {
           "control": {
             "type": "boolean"
           },
-          "name": "Isstandard"
+          "name": "Is Standard"
         },
-        "image": {
+        "title": {
           "control": {
             "type": "text"
           },
-          "name": "Image"
+          "name": "Title"
         },
         "text": {
           "control": {
@@ -33,11 +33,11 @@
           },
           "name": "Text"
         },
-        "title": {
+        "image": {
           "control": {
             "type": "text"
           },
-          "name": "Title"
+          "name": "Image"
         }
       }
     }

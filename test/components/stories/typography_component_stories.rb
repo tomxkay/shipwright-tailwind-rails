@@ -1,3 +1,3 @@
 class TypographyComponentStories < ViewComponent::Storybook::Stories
-  story(:default) {}
+  # story(:default) {}
 end
