@@ -4,4 +4,5 @@ export const parameters = {
       location.port !== "" ? ":3000" : ""
     }/rails/view_components`,
   },
+  controls: { expanded: true },
 };
