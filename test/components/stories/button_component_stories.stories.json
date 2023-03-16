@@ -18,6 +18,7 @@
             "type": "select"
           },
           "name": "Variant",
+          "description": "selects styling of button.",
           "options": [
             "fill",
             "outline",
@@ -28,7 +29,8 @@
           "control": {
             "type": "text"
           },
-          "name": "Label"
+          "name": "Label",
+          "description": "sets the label of the button."
         }
       }
     }
