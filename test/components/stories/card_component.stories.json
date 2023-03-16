@@ -1,0 +1,45 @@
+{
+  "title": "Card Component",
+  "stories": [
+    {
+      "name": "default",
+      "parameters": {
+        "server": {
+          "id": "card_component/default"
+        }
+      },
+      "args": {
+        "isStandard": false,
+        "image": "",
+        "text": "",
+        "title": ""
+      },
+      "argTypes": {
+        "isStandard": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "Isstandard"
+        },
+        "image": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Image"
+        },
+        "text": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Text"
+        },
+        "title": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Title"
+        }
+      }
+    }
+  ]
+}
