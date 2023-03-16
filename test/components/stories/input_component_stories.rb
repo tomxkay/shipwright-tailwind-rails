@@ -1,4 +1,6 @@
 class InputComponentStories < ViewComponent::Storybook::Stories
+  title 'Atoms/Input'
+
   control :disabled, as: :boolean, default: false
   control :arrow, as: :boolean, default: false
   control :error_message, as: :text, default: ''

@@ -1,4 +1,6 @@
 class CardComponentStories < ViewComponent::Storybook::Stories
+  title 'Organisms/Card'
+
   control :is_standard, as: :boolean
   control :title, as: :text
   control :text, as: :text
