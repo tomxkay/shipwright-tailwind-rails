@@ -2,6 +2,6 @@
 
 class InputComponentPreview < ViewComponent::Preview
   def default
-    render(InputComponent.new(variant: "variant"))
+    render(InputComponent.new(variant: 'input'))
   end
 end

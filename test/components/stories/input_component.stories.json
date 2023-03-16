@@ -9,10 +9,93 @@
         }
       },
       "args": {
-        "variant": "input",
-        "disabled": false
+        "disabled": false,
+        "arrow": false,
+        "errorMessage": "",
+        "icon": "search",
+        "name": "",
+        "placeholder": "",
+        "required": false,
+        "rows": "4",
+        "successMessage": "",
+        "type": "text",
+        "value": "",
+        "variant": "input"
       },
       "argTypes": {
+        "disabled": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "Disabled"
+        },
+        "arrow": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "Arrow"
+        },
+        "errorMessage": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Errormessage"
+        },
+        "icon": {
+          "control": {
+            "type": "select"
+          },
+          "name": "Icon",
+          "options": [
+            "search",
+            "credit-card",
+            "mail",
+            "phone",
+            "user"
+          ]
+        },
+        "name": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Name"
+        },
+        "placeholder": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Placeholder"
+        },
+        "required": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "Required"
+        },
+        "rows": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Rows"
+        },
+        "successMessage": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Successmessage"
+        },
+        "type": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Type"
+        },
+        "value": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Value"
+        },
         "variant": {
           "control": {
             "type": "select"
@@ -22,12 +105,6 @@
             "input",
             "textarea"
           ]
-        },
-        "disabled": {
-          "control": {
-            "type": "boolean"
-          },
-          "name": "Disabled"
         }
       }
     }

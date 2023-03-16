@@ -6,6 +6,7 @@ class InputComponent < ViewComponent::Base
 
   def initialize(arrow: false, disabled: false, errorMessage: '', icon: 'search', label: '', name: '', placeholder: '', required: false,
                  rows: '4', successMessage: '', type: 'text', value: '', variant: 'input')
+
     @arrow = arrow
     @disabled = disabled
     @errorMessage = errorMessage
