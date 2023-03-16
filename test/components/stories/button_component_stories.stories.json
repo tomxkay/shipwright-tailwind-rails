@@ -1,6 +1,36 @@
 {
   "title": "Button Component",
   "stories": [
-
+    {
+      "name": "default",
+      "parameters": {
+        "server": {
+          "id": "button_component/default"
+        }
+      },
+      "args": {
+        "variant": "fill",
+        "label": "Button"
+      },
+      "argTypes": {
+        "variant": {
+          "control": {
+            "type": "select"
+          },
+          "name": "Variant",
+          "options": [
+            "fill",
+            "outline",
+            "ghost"
+          ]
+        },
+        "label": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Label"
+        }
+      }
+    }
   ]
 }

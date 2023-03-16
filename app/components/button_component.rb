@@ -40,7 +40,7 @@ class ButtonComponent < ViewComponent::Base
   }.freeze
 
   def initialize(variant: :fill)
-    @variant = variant
+    @variant = variant.to_sym
   end
 
   def classes
