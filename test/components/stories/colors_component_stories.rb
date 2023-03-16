@@ -1,3 +1,5 @@
 class ColorsComponentStories < ViewComponent::Storybook::Stories
-  # story(:default) {}
+  def default
+    render(ColorsComponent.new)
+  end
 end

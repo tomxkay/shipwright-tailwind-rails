@@ -1,21 +1,7 @@
 <%
-  @arrow = false
-  @disabled = false
-  @errorMessage = ""
-  @hintText = "hint message"
-  @icon = "search"
-  @label = ""
-  @name = ""
-  @placeholder = "Enter your text here"
-  @required = false
-  @rows = "4"
-  @successMessage = ""
-  @type = "text"
-  @value = ""
-  @variant = "input"
 
-  borderColor = @errorMessage.present? ? "border-error-dark" : "border-background-black-line"
-  fontColor = @errorMessage.present? ? "text-error-dark" : "text-type-black-primary"
+  borderColor = @error_message.present? ? "border-error-dark" : "border-background-black-line"
+  fontColor = @error_message.present? ? "text-error-dark" : "text-type-black-primary"
 
   variantTag = {
     input: "input",
@@ -52,7 +38,7 @@
    </div>
 
    <div
-     class="flex flex-row relative border focus-within:border-button-active focus-within:w-full <%= borderColor %> <%= @errorMessage ? 'border-error-dark' : '' %> <%= @disabled ? 'bg-button-deactivatedBackground border-type-black-deactivated' : 'text-type-black-primary' %>"
+     class="flex flex-row relative border focus-within:border-button-active focus-within:w-full <%= borderColor %> <%= @error_message ? 'border-error-dark' : '' %> <%= @disabled ? 'bg-button-deactivatedBackground border-type-black-deactivated' : 'text-type-black-primary' %>"
     >
      <%# Input / Text Area %>
      <input
@@ -77,18 +63,18 @@
    </div>
 
    <%# Error Message %>
-   <% if @errorMessage.present? %>
+   <% if @error_message.present? %>
      <span class="flex items-center paragraph-2 text-error-dark">
        <%= tag.i class: "fe fe-alert-triangle pr-[4px]" %>
-       <%= @errorMessage %>
+       <%= @error_message %>
      </span>
    <% end %>
 
    <%# Success Message %>
-   <% if @successMessage.present? %>
+   <% if @success_message.present? %>
      <span class="flex items-center paragraph-2 text-success-dark">
        <%= tag.i class: "fe fe-check-circle pr-[4px]" %>
-       <%= @successMessage %>
+       <%= @success_message %>
      </span>
    <% end %>
  </div>

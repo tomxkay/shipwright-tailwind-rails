@@ -1,6 +1,112 @@
 {
   "title": "Input Component",
   "stories": [
-
+    {
+      "name": "default",
+      "parameters": {
+        "server": {
+          "id": "input_component/default"
+        }
+      },
+      "args": {
+        "disabled": false,
+        "arrow": false,
+        "error_message": "",
+        "icon": "search",
+        "name": "name",
+        "placeholder": "",
+        "required": false,
+        "rows": "",
+        "success_message": "",
+        "type": "text",
+        "value": "",
+        "variant": "input"
+      },
+      "argTypes": {
+        "disabled": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "Disabled"
+        },
+        "arrow": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "Arrow"
+        },
+        "error_message": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Error Message"
+        },
+        "icon": {
+          "control": {
+            "type": "select"
+          },
+          "name": "Icon",
+          "options": [
+            "search",
+            "credit-card",
+            "mail",
+            "phone",
+            "user"
+          ]
+        },
+        "name": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Name"
+        },
+        "placeholder": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Placeholder"
+        },
+        "required": {
+          "control": {
+            "type": "boolean"
+          },
+          "name": "Required"
+        },
+        "rows": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Rows"
+        },
+        "success_message": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Success Message"
+        },
+        "type": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Type"
+        },
+        "value": {
+          "control": {
+            "type": "text"
+          },
+          "name": "Value"
+        },
+        "variant": {
+          "control": {
+            "type": "select"
+          },
+          "name": "Variant",
+          "options": [
+            "input",
+            "textarea"
+          ]
+        }
+      }
+    }
   ]
 }
