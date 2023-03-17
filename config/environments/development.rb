@@ -67,6 +67,7 @@ Rails.application.configure do
     allow do
       origins '*'
       resource '/rails/view_components/*', headers: :any, methods: [:get]
+      resource '/assets/*', headers: :any, methods: [:get]
     end
   end
 
