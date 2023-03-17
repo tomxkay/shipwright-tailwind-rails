@@ -5,4 +5,9 @@ export const parameters = {
     }/rails/view_components`,
   },
   controls: { expanded: true },
+  options: {
+    storySort: {
+      order: ["Tokens", "Atoms", "Molecules", "Components", "*"],
+    },
+  },
 };
