@@ -1,11 +1,11 @@
 {
-  "title": "Tokens/Colors",
+  "title": "Tokens",
   "stories": [
     {
-      "name": "default",
+      "name": "colors",
       "parameters": {
         "server": {
-          "id": "colors_component/default"
+          "id": "colors_component/colors"
         }
       }
     }

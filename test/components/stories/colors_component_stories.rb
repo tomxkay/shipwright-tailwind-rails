@@ -1,7 +1,7 @@
 class ColorsComponentStories < ViewComponent::Storybook::Stories
-  title 'Tokens/Colors'
+  title 'Tokens'
 
-  def default
+  def colors
     render(ColorsComponent.new)
   end
 end

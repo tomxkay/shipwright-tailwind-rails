@@ -1,7 +1,7 @@
 class TypographyComponentStories < ViewComponent::Storybook::Stories
-  title 'Tokens/Typography'
+  title 'Tokens'
 
-  def default
+  def typography
     render(TypographyComponent.new)
   end
 end

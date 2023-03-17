@@ -1,11 +1,11 @@
 {
-  "title": "Atoms/Input",
+  "title": "Atoms",
   "stories": [
     {
-      "name": "default",
+      "name": "input",
       "parameters": {
         "server": {
-          "id": "input_component/default"
+          "id": "input_component/input"
         }
       },
       "args": {

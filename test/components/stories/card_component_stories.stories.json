@@ -1,11 +1,11 @@
 {
-  "title": "Organisms/Card",
+  "title": "Organisms",
   "stories": [
     {
-      "name": "default",
+      "name": "card",
       "parameters": {
         "server": {
-          "id": "card_component/default"
+          "id": "card_component/card"
         }
       },
       "args": {

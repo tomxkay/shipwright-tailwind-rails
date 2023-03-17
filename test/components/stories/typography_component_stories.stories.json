@@ -1,11 +1,11 @@
 {
-  "title": "Tokens/Typography",
+  "title": "Tokens",
   "stories": [
     {
-      "name": "default",
+      "name": "typography",
       "parameters": {
         "server": {
-          "id": "typography_component/default"
+          "id": "typography_component/typography"
         }
       }
     }

@@ -1,11 +1,11 @@
 {
-  "title": "Atoms/Button",
+  "title": "Atoms",
   "stories": [
     {
-      "name": "default",
+      "name": "button",
       "parameters": {
         "server": {
-          "id": "button_component/default"
+          "id": "button_component/button"
         }
       },
       "args": {
