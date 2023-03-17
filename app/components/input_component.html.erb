@@ -74,7 +74,7 @@ value = isInput || isTextArea ? @value : "" %>
     <%# Icon %>
     <% if iconPresent %>
       <%= tag.i class:
-              "fe fe-search absolute pointer-events-none left-[16px] top-[14px] peer-disabled:text-type-black-deactivated text-type-black-primary" %>
+              "fe fe-search absolute pointer-events-none left-[16px] top-[19px] peer-disabled:text-type-black-deactivated text-type-black-primary" %>
     <% end %>
 
     <%# Arrow %>
@@ -87,7 +87,7 @@ value = isInput || isTextArea ? @value : "" %>
   <%# Error Message %>
   <% if @error_message.present? %>
     <span class="flex items-center paragraph-2 text-error-dark">
-      <%= tag.i class: "fe fe-alert-triangle pr-[4px]" %>
+      <%= tag.i class: "fe fe-warning pr-[4px]" %>
       <%= @error_message %>
     </span>
   <% end %>
