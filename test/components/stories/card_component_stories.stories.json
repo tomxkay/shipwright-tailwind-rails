@@ -19,25 +19,29 @@
           "control": {
             "type": "boolean"
           },
-          "name": "Is Standard"
+          "name": "Is Standard",
+          "description": "ensure card has standardized height, regardless of content."
         },
         "title": {
           "control": {
             "type": "text"
           },
-          "name": "Title"
+          "name": "Title",
+          "description": "add title to card. title appears above text."
         },
         "text": {
           "control": {
             "type": "text"
           },
-          "name": "Text"
+          "name": "Text",
+          "description": "add text to card. text appears below title."
         },
         "image": {
           "control": {
             "type": "text"
           },
-          "name": "Image"
+          "name": "Image",
+          "description": "add image to card, enter path to image."
         }
       }
     }
